@@ -8,22 +8,6 @@
 
 目前仅有两个心脏的数据集
 
-<style>
-table th:first-of-type {
-    width: 20%;
-}
-table th:nth-of-type(2) {
-    width: 30%;
-}
-table th:nth-of-type(3) {
-    width: 50%;
-}
-table th:nth-of-type(4) {
-    width: 20%;
-}
-</style>
-
-
 | 名称                                                         | 简介                                                         | 内容                                                         | 下载 |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------------- |
 | **Cardiac Atlas Project**<br />[Motion Tracking Challenge](#motion-tracking-challenge) | 这项挑战的目的是评估应用于多模态心脏数据库的不同运动分析算法的准确性和可重复性。 | cine SSFP sequences<br />4D tMR<br />3D ultrasound           | 百度网盘：[链接](https://pan.baidu.com/s/1vEhA_BDsxfAuOnG5jQ7U-w?pwd=2p9j) <br/>提取码：2p9j<br />其他：待补充 |
