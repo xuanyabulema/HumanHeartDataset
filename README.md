@@ -1,5 +1,13 @@
 # Human Heart Dataset
-为了方便网络质量不佳条件下，获取人体心脏数据集
+
+众所周知，中国幅员辽阔，架设的互联网在不同的地方质量大不相同，有些地方很容易受到 DNS 污染，因此在下载某些数据集的过程中并不是很顺畅。于是有了这个想法，将费尽时间下载的数据集提供 GitHub 或者国内常用网盘的下载方式，及其原网页介绍。
+
+目前仅有两个心脏的数据集
+
+| 名称                                                         | 简介                                                         | 内容                                                         | 国内网盘下载 | GitHub下载 |
+| ------------------------------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------- | ---------- |
+| **Cardiac Atlas Project**<br />[Motion Tracking Challenge](#Motion Tracking Challenge（运动追踪挑战）) | 这项挑战的目的是评估应用于多模态心脏数据库的不同运动分析算法的准确性和可重复性。 | cine SSFP sequences<br />4D tMR<br />3D ultrasound           | 待上传       | 待上传     |
+| **Human Heart Project**<br />[Multimodal straus database](Multimodality STRAUS) | 提出了第一个模拟框架，该框架允许从同一虚拟病人中生成逼真的三维合成心脏超声和磁共振（包括cine和tagged）图像序列。 | 3D cine-MR simulation sequences<br />3D tag-MR (ch1 & ch2 & ch3) simulation sequences )<br />3D Ultrasound simulation sequences | 待上传       | 待上传     |
 
 # [Cardiac Atlas Project](http://www.cardiacatlas.org/)
 
@@ -57,3 +65,87 @@ For more inquiries about the data, please contact
 - Kawal Rhode (kawal.rhode@kcl.ac.uk)
 - Catalina Tobon Gomez (catactg@gmail.com)
 - Mathieu de Craene (mathieu.de_craene@philips.com)
+
+# Human Heart Project
+
+## Multimodality STRAUS
+
+This is a joint venture between [Philips Research Suresnes FRANCE](http://www.philips.com/a-w/research/locations/suresnes.html), [CREATIS](http://www.creatis.insa-lyon.fr/) and [INRIA (Team ASCLEPIOS)](https://team.inria.fr/asclepios/).
+
+## Overview
+
+Quantification of cardiac deformation and strain through different image modalities (3D ultrasound and magnetic resonance imaging being the most widely used techniques) has been the object of intense research. However, a widespread use of these techniques in clinical routine is still held back due to the lack of strong studies which accuratly quantify and compare the performance of existing methods in each modality. The use of synthetic sequences is one of the most promising tool for advanced initial in silico evaluation. Nevertheless, the realism of existing simulation techniques still needs to be improved to represent reliable benchmarking data.
+
+### Objectives
+
+We propose in this study the first simulation framework which allows the generation of realistic 3D synthetic cardiac ultrasound and magnetic resonance (both cine and tagged) image sequences from the same virtual patient.
+
+![Illustration Multimodality STRAUSS](http://humanheart-project.creatis.insa-lyon.fr/multimodalityStrausResources/illustration_multimodality_straus.png)
+
+### Methodology
+
+A state-of-the-art electromechanical model is combined with physical simulators (one for each modality) in an novel framework which efficiently merges several warping strategies to keep full control of myocardial deformations while preserving realistic image texture. The novelties introduced in this paper are the following :
+
+- The combination of an electromechanical model with a magnetic resonance physical simulator to introduce the possibility of interacting with the image formation process to introduce complex effects;
+- The use of multi-modal template sequences from the same patient to extract the most relevant information from each modality in order to generate both cine and tagged synthetic sequences;
+- The introduction of a novel combinative warping strategy, with the goal of reducing motion artifacts that may occur in myocardial regions;
+- The contribution of the first unified framework which allows the generation of multi-modal (US, cine and tagged MR) realistic synthetic sequences for the same virtual patient.
+
+A schematic of the extended pipeline to magnetic resonnance simulation is summarized hereunder
+
+![Illustration Pipeline](http://humanheart-project.creatis.insa-lyon.fr/multimodalityStrausResources/illustration_pipeline.png)
+
+## Open-access database
+
+The proposed generic framework was used to generate the first database composed of 3D ultrasound, cine and tagged MR sequences for each of the 18 virtual patients, including healthy and pathological cases. We simulated a total of 90 sequences representing 2700 image volumes.
+
+All the simulations were launched from the [virtual imaging platform](https://vip.creatis.insa-lyon.fr/) (VIP) which allows the execution of the simulator as a web service and benefits from the [EGI](https://www.egi.eu/) computing power. The generation of one full 3D sequence took around 6 hours on VIP, knowing that would have taken over 300 hours on a personal laptop
+
+### Get Started
+
+To browse through the image database, simply connect to the [Multimodality STRAUS database](http://humanheart-project.creatis.insa-lyon.fr/database/#collection/587de6f4e1af3f30a2980a58), explore and download the images of interest or the entire collection. This database is public, so no login is required.
+
+### Download
+
+You can download the entire collection of images or specific images.
+
+#### Download Collection (Option 1)
+
+Click on the icon menu ***Collection actions*** in the upper-right of the collection's header and select ***Download collection***\.
+
+![Download Collection (Option 1)](http://humanheart-project.creatis.insa-lyon.fr/multimodalityStrausResources/2017-MSTRAUS-DownloadCollection-Option1.png)Collection actions menu.
+
+#### Download Collection (Option 2)
+
+Click on the icon ***Collection actions*** in the upper-right corner of the table's header and ***Download collection***.
+
+![Download Collection (Option 2)](README/2017-MSTRAUS-DownloadCollection-Option2.png)Collection actions icon.
+
+#### Download Selected Folders
+
+Select the folders of interest and click on the icon ***Checked actions*** and ***Download checked resources***.
+
+![Download Resources](README/2017-MSTRAUS-DownloadResources.png)Checked actions icon.
+
+Each virtual patient folder is organized as follows
+
+| Folder | Content Description                                          |
+| ------ | ------------------------------------------------------------ |
+| cine   | 3D cine-MR simulation sequences (raw/mhd) with reference meshes (vtk) |
+| tag1   | 3D tag-MR (ch1) simulation sequences (raw/mhd) with reference meshes (vtk) |
+| tag2   | 3D tag-MR (ch2) simulation sequences (raw/mhd) with reference meshes (vtk) |
+| tag3   | 3D tag-MR (ch3) sequences (raw/mhd) with reference meshes (vtk) |
+| us     | 3D Ultrasound simulation sequences (raw/mhd) with reference meshes (vtk) |
+
+## R&D Team
+
+| Olivier BERNARD       | Associate Professor, [CREATIS, France](https://www.creatis.insa-lyon.fr/)Contact: [olivier.bernard@creatis.insa-lyon.fr](mailto:olivier.bernard@creatis.insa-lyon.fr) |
+| --------------------- | ------------------------------------------------------------ |
+| Mathieu De Craene     | Research Engineer, [Philips Research, Suresnes, France](http://www.philips.com/a-w/research/locations/suresnes.html)Contact: [mathieu.decraene@philips.com](mailto:mathieu.decraene@philips.com) |
+| Maxime Sermesant      | Researcher, [INRIA, France](https://team.inria.fr/asclepios/)Contact: [maxime.sermesant@inria.fr](mailto:maxime.sermesant@inria.fr) |
+| Jan D'hooge           | Professor, [MIRC laboratory, Belgium](http://www.kuleuven.be/wieiswie/en/person/00014531)Contact: [jan.dhooge@uzleuven.be](mailto:jan.dhooge@uzleuven.be) |
+| Sorina Camarasu-Pop   | Research Engineer, [CREATIS, France](http://www.creatis.insa-lyon.fr/)Contact: [sorina.pop@creatis.insa-lyon.fr](mailto:sorina.pop@creatis.insa-lyon.fr) |
+| Martino Alessandrini  | Postdoctoral fellow, [University of Bologna, Italy](http://www.creatis.insa-lyon.fr/)Contact: [martino.alessandrini@gmail.com](mailto:sorina.pop@creatis.insa-lyon.fr) |
+| Denis Friboulet       | Professor, [CREATIS, France](https://www.creatis.insa-lyon.fr/)Contact: [denis.friboulet@creatis.insa-lyon.fr](mailto:denis.friboulet@creatis.insa-lyon.fr) |
+| Yitian Zhou           | PhD student, [Philips Research, Suresnes, France](http://www.philips.com/a-w/research/locations/suresnes.html)Contact: [yitian.zhou@philips.com](mailto:yitian.zhou@philips.com) |
+| Sophie Giffard-Roisin | PhD student, [INRIA, France](https://team.inria.fr/asclepios/)Contact: [sophie.giffard-roisin@inria.fr](mailto:sophie.giffard-roisin@inria.fr) |
