@@ -1,6 +1,9 @@
+中文 | [English](./README_en.md)
+
 # Human Heart Dataset
 
-众所周知，中国幅员辽阔，架设的互联网在不同的地方质量大不相同，有些地方很容易受到 DNS 污染，因此在下载某些数据集的过程中并不是很顺畅。于是有了这个想法，将费尽时间下载的数据集提供 GitHub 或者国内常用网盘的下载方式，及其原网页介绍。
+众所周知，中国幅员辽阔，架设的互联网在不同的地方质量大不相同，有些地方很容易受到 DNS 污染，因此在下载某些数据集的过程中并不是很顺畅。于是我有了这个想法，将一些需要很多时间下载的数据集上传到GitHub和国内常用网盘。并且提供该项目的基本介绍（基本复制于项目原网页，所以其中跳转链接为原网页跳转链接）。
+如果有所冒犯，请联系我删除。
 
 目前仅有两个心脏的数据集
 
@@ -66,9 +69,9 @@ For more inquiries about the data, please contact
 - Catalina Tobon Gomez (catactg@gmail.com)
 - Mathieu de Craene (mathieu.de_craene@philips.com)
 
-# Human Heart Project
+# [Human Heart Project](http://humanheart-project.creatis.insa-lyon.fr/)
 
-## Multimodality STRAUS
+## [Multimodality STRAUS](http://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html#database)
 
 This is a joint venture between [Philips Research Suresnes FRANCE](http://www.philips.com/a-w/research/locations/suresnes.html), [CREATIS](http://www.creatis.insa-lyon.fr/) and [INRIA (Team ASCLEPIOS)](https://team.inria.fr/asclepios/).
 
