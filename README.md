@@ -8,26 +8,10 @@
 
 目前仅有两个心脏的数据集
 
-<style>
-table th:first-of-type {
-    width: 20%;
-}
-table th:nth-of-type(2) {
-    width: 30%;
-}
-table th:nth-of-type(3) {
-    width: 50%;
-}
-table th:nth-of-type(4) {
-    width: 20%;
-}
-</style>
-
-
 | 名称                                                         | 简介                                                         | 内容                                                         | 下载 |
-| :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------------- |
-| **Cardiac Atlas Project**<br />[Motion Tracking Challenge](#motion-tracking-challenge) | 这项挑战的目的是评估应用于多模态心脏数据库的不同运动分析算法的准确性和可重复性。 | cine SSFP sequences<br />4D tMR<br />3D ultrasound           | 百度网盘：[链接](https://pan.baidu.com/s/1vEhA_BDsxfAuOnG5jQ7U-w?pwd=2p9j) <br/>提取码：2p9j<br />其他：待补充 |
-| **Human Heart Project**<br />[Multimodal straus database](#multimodality-straus) | 提出了第一个模拟框架，该框架允许从同一虚拟病人中生成逼真的三维合成心脏超声和磁共振（包括cine和tagged）图像序列。 | 3D cine-MR simulation sequences<br />3D tag-MR (ch1 & ch2 & ch3) simulation sequences )<br />3D Ultrasound simulation sequences | 百度网盘：[链接](https://pan.baidu.com/s/1UvHKH5PbAVR5qGG0M7Y4_g?pwd=cxqi) <br/>提取码：cxqi<br />其他：待补充 |
+| ------------------------------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------------- |
+| **Cardiac Atlas Project**<br />[Motion Tracking Challenge](#motion-tracking-challenge) | 这项挑战的目的是评估应用于多模态心脏数据库的不同运动分析算法的准确性和可重复性。 | cine SSFP sequences<br />4D tMR<br />3D ultrasound           | 百度网盘：<br />链接：https://pan.baidu.com/s/1vEhA_BDsxfAuOnG5jQ7U-w?pwd=2p9j <br/>提取码：2p9j<br />其他：待补充 |
+| **Human Heart Project**<br />[Multimodal straus database](#multimodality-straus) | 提出了第一个模拟框架，该框架允许从同一虚拟病人中生成逼真的三维合成心脏超声和磁共振（包括cine和tagged）图像序列。 | 3D cine-MR simulation sequences<br />3D tag-MR (ch1 & ch2 & ch3) simulation sequences )<br />3D Ultrasound simulation sequences | 百度网盘：<br />链接：https://pan.baidu.com/s/1UvHKH5PbAVR5qGG0M7Y4_g?pwd=cxqi <br/>提取码：cxqi<br />其他：待补充 |
 
 # [Cardiac Atlas Project](http://www.cardiacatlas.org/)
 
