@@ -19,16 +19,14 @@
 
 ## [Motion Tracking Challenge](http://www.cardiacatlas.org/challenges/motion-tracking-challenge/)
 
-
-
 This is the first Cardiac Motion Analysis Challenge that was held at the 2011 MICCAI workshop entitled “Statistical Atlases and Computational Models of the Heart: Imaging and Modelling Challenges” (STACOM’11). The objective of this challenge is to evaluate the accuracy and reproducibility of different motion analysis algorithms applied to a multimodal cardiac database. The database includes a dataset from a dynamic phantom1 and 15 datasets from healthy volunteers. The data was acquired at the Division of Imaging Sciences and Biomedical Engineering, King’s College London, United Kingdom, and the Department of Internal Medicine II – Cardiology, University of Ulm, Germany.（这是第一届心脏运动分析挑战赛，是在2011年MICCAI研讨会上举行的，题为 "心脏的统计图谱和计算模型。影像和建模的挑战"（STACOM'11）。这项挑战的目的是：评估不同运动分析算法应用于多模态心脏数据库的准确性和可重复性。该数据库包括一个动态模型1的数据集和15个健康志愿者的数据集。这些数据是在英国伦敦国王学院影像科学和生物医学工程系以及德国乌尔姆大学内科二系--心脏科获得的。）
+
+<details>
+<summary>## 展开更多内容</summary>
 
 Click [here](http://cilab2.upf.edu/stacom_cesc11/index.php?option=com_content&view=article&id=24&Itemid=22) for more information about the motion tracking challenge.
 
 ![image-20220922142726898](README/image-20220922142726898.png)
-
-<details>
-<summary>展开更多内容</summary>
 
 ### Data
 
